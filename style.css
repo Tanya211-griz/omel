@@ -1,0 +1,171 @@
+header {
+    min-height: 120px;
+    background-color: wheat;
+    margin-bottom: 10px;
+    display: grid;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+header img {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: auto;
+    float: left;
+}
+
+.logo {
+    border-radius: 100%;
+}
+
+.logo:hover {
+    animation: spin 1.5s infinite;
+}
+
+nav {
+    margin-top: 20px;
+    order: 1;
+    width: auto;
+    display: grid;
+    height: auto;
+    align-content: center;
+    background-color: darksalmon;
+}
+
+nav a {
+    float: left;
+    color: midnightblue;
+    text-decoration: none;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+body {
+    margin: 0;
+    background-color: bisque;
+    font-size: 120%;
+}
+
+.content {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    color: indigo;
+    background-color: blanchedalmond;
+    margin-bottom: 25px;
+}
+
+header h1{
+    width: auto;
+    text-align: right;
+    color: darkgoldenrod;
+}
+
+.content ul {
+    align-items: center;
+}
+
+table {
+    border: 1px solid #69c;
+    border-collapse: separate;
+    empty-cells: hide;
+    margin-bottom: 10px;
+}
+
+#table1Caption {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+th, td {
+    border: 2px solid #69c;
+    text-align: center;
+}
+
+tr:nth-child(odd) {
+    background-color: coral;
+    color: mediumblue;
+}
+
+tr:nth-child(even) {
+    background-color: green;
+    color: gold;
+}
+
+footer {
+    width: 100%;
+    color: darkblue;
+    background-color: #ffdead;
+    min-height: 75px;
+}
+
+form {
+    display: grid;
+    font-size: 20px;
+    text-align: center;
+}
+
+form input {
+    font-size: 16px;
+}
+
+form select {
+    font-size: 16px;
+}
+
+form button {
+    width: 50%;
+    height: 50px;
+    margin-left: 25%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: navajowhite;
+}
+
+form textarea {
+    height: 200px;
+}
+
+@media screen and (min-width: 800px) {
+    .content {
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        color: indigo;
+        background-color: blanchedalmond;
+        max-width: 960px;
+        margin-bottom: 25px;
+    }
+
+    .content ul {
+        order: -1;
+    }
+
+    header {
+        display: block;
+    }
+
+    nav {
+        display: block;
+        float: right;
+        width: auto;
+        height: 50px;
+        margin-top: auto;
+        margin-left: auto;
+        align-content: center;
+        background-color: darksalmon;
+    }
+
+    header h1 {
+        justify-content: center;
+        width: 100%;
+        align-content: center;
+        text-align: center;
+    }
+
+}
